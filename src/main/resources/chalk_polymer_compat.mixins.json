@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.thenathe.chalkcompat.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "ChalkInitializationMixin",
+    "ChalkParticlesMixin",
+    "ChalkTargetingMixin",
+    "ChalkPickMixin",
+    "ChalkDestroyParticlesMixin",
+    "ChalkUseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

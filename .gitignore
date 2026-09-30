@@ -1,0 +1,7 @@
+.gradle/
+build/
+libs/
+__pycache__/
+*.pyc
+qa/runs/
+*.log

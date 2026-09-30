@@ -1,0 +1,87 @@
+{
+  "26.2": {
+    "chalk": {
+      "version": "3.2.0+26.2",
+      "url": "https://cdn.modrinth.com/data/OrtjXTCH/versions/Im9gI64u/chalk-3.2.0%2B26.2.jar",
+      "filename": "chalk-3.2.0+26.2.jar",
+      "hashes": {
+        "sha512": "7ff3bdd5bf20afcfb2e1ddac25b932a18f25cf63a6048cb3655a1455381c0c86d18be3adc742b6a2db91e8db82186339e52c8db479a88a8cf19aaaba9ff08a3b",
+        "sha1": "22f816be1f9a127826ebbab8b318f2d9a8c48159"
+      }
+    },
+    "polymer": {
+      "version": "0.17.5+26.2",
+      "url": "https://cdn.modrinth.com/data/xGdtZczs/versions/561YnR5f/polymer-bundled-0.17.5%2B26.2.jar",
+      "filename": "polymer-bundled-0.17.5+26.2.jar",
+      "hashes": {
+        "sha512": "bcf72922fba4a6a94cdce10c55018e616831be9d780345ddd010e0de35c6aa7e1e5863ac7afbb9738514b3a4ea4702779631c465e19c390c754b941687b42bcb",
+        "sha1": "115afd5dc50584d1ac294fe71b5aeb4e9138e434"
+      }
+    },
+    "fabric-api": {
+      "version": "0.161.0+26.2",
+      "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/ewUK83HI/fabric-api-0.161.0%2B26.2.jar",
+      "filename": "fabric-api-0.161.0+26.2.jar",
+      "hashes": {
+        "sha1": "332da34ebb72171e603a0c538de17f4c54ea9e29",
+        "sha512": "2502fa5ade78e9a120b3747bc1a9a2167d6671743bea45bf115d3174c94121aeda87c549446d1a604a9c11fb828de17a551e3514ce42f3e93069dd14bdaee55b"
+      }
+    },
+    "cloth-config": {
+      "version": "26.2.155+fabric",
+      "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/Nv3xnWXd/cloth-config-26.2.155.jar",
+      "filename": "cloth-config-26.2.155.jar",
+      "hashes": {
+        "sha512": "37b1e402f0df5a383656e21a38ee18cdd15cb4ba3fb62fbeba82ef4b959a4479fc32718ac0d9d154a7d9104c5f7315bfa67dbeced0b8ff240b8039d4848d5df1",
+        "sha1": "babcf16dbd15e09d326e21ffe85ab3f7d843ef9e"
+      }
+    },
+    "chalk-colorful-addon": {
+      "version": "universal",
+      "url": "https://cdn.modrinth.com/data/VPJS28NH/versions/gvVFiwqG/chalk-colorful-addon-2.1.1.jar",
+      "filename": "chalk-colorful-addon-2.1.1.jar",
+      "hashes": {
+        "sha512": "7efc1d5c7e2589eaf02bddb3798b4db6c0dcc8e3a8deccad428c1081cd397f249983a3b8deb6f7b336ef59997ce26290fa6687390ed7709550cf1421eedc8417",
+        "sha1": "7891048abc1c9dc3e577cf74f0e860a5e9dad342"
+      }
+    }
+  },
+  "26.3": {
+    "polymer": {
+      "version": "0.18.2+26.3",
+      "url": "https://cdn.modrinth.com/data/xGdtZczs/versions/REBDssAz/polymer-bundled-0.18.2%2B26.3.jar",
+      "filename": "polymer-bundled-0.18.2+26.3.jar",
+      "hashes": {
+        "sha1": "8571b8aaa1533e08739e75f01020836a76daa30d",
+        "sha512": "a83bec0ef7ee4c905429f102a9a1b2ff9db60fb23f3e6b5a26ff4442b0427c3edd821f311643a3c377541cfd5a4753519001cbfebbeb78014a77041d91449f51"
+      }
+    },
+    "fabric-api": {
+      "version": "0.161.0+26.3",
+      "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/bNnaTiuM/fabric-api-0.161.0%2B26.3.jar",
+      "filename": "fabric-api-0.161.0+26.3.jar",
+      "hashes": {
+        "sha512": "ed6b2586d6fde11fde8472f5a527c51e99b67026e46f94d4bfd85e7e28ce5ee299173ee16ad576ceb51f39f98d30a811086a6deb1a86a524859cc16e12da109d",
+        "sha1": "53f9ee02c3702734d90520aa8c9719bf0e1c8d4f"
+      }
+    },
+    "cloth-config": {
+      "version": "26.3.159+fabric",
+      "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/fg2uyxOW/cloth-config-fabric-26.3.159.jar",
+      "filename": "cloth-config-fabric-26.3.159.jar",
+      "hashes": {
+        "sha512": "8924e19d41845096724fa10f3717bc51964a0edbbbcad0ff1e6c6187a398b08f356e49579a657c2dc44a7f92e3850771f3ca70bf8c1f654de60425163b91dbb1",
+        "sha1": "9a5cce069380a2047250831dcb19f4ef1b15872d"
+      }
+    },
+    "chalk": {
+      "version": "3.2.1+26.3",
+      "filename": "chalk-3.2.1+26.3.jar",
+      "source": "https://github.com/THENATHE/Chalk",
+      "commit": "dfb461ef9eb6f7bf5188570594c3bd21171c2391",
+      "hashes": {
+        "sha512": "e9d6232ff309cad59b5b4d2d2c0d470f91d3cee543e87f1faf9810ac39fd1397a9d57d9f6c3bc4a9be84983fe8ab92b90a156538fe0ecfa162d3e57527a3560e"
+      }
+    }
+  }
+}

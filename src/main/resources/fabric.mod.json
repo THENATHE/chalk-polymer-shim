@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "chalk_polymer_compat",
+  "version": "${version}",
+  "name": "Chalk Polymer Compatibility",
+  "description": "Server-only Polymer shim providing fully usable Chalk to vanilla and modded clients.",
+  "authors": ["THENATHE"],
+  "license": "MIT",
+  "environment": "server",
+  "contact": {"sources": "https://github.com/THENATHE/chalk-polymer-shim", "issues": "https://github.com/THENATHE/chalk-polymer-shim/issues"},
+  "mixins": ["chalk_polymer_compat.mixins.json"],
+  "depends": {"minecraft": "${mc}", "java": ">=25", "fabricloader": ">=0.19.5", "fabric-api": "*", "chalk": "${chalk}", "polymer-core": "${polymer}", "polymer-resource-pack": "${polymer}", "polymer-virtual-entity": "${polymer}"}
+}

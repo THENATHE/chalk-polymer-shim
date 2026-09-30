@@ -1,0 +1,32 @@
+plugins { id 'net.fabricmc.fabric-loom' version '1.17.20' }
+def mc = providers.gradleProperty('mc').getOrElse('26.3')
+def pv = mc == '26.2' ? '0.17.5+26.2' : '0.18.2+26.3'
+version = "1.0.0+${mc}"
+group = 'com.thenathe'
+base { archivesName = 'chalk-polymer-compat' }
+buildDir = "build/${mc}"
+sourceSets.main.java.srcDir("src/${mc}/java")
+repositories { maven { url = 'https://maven.nucleoid.xyz/' } }
+dependencies {
+    minecraft "com.mojang:minecraft:${mc}"
+    implementation 'net.fabricmc:fabric-loader:0.19.5'
+    implementation "net.fabricmc.fabric-api:fabric-api:${mc == '26.2' ? '0.161.0+26.2' : '0.161.0+26.3'}"
+    implementation "eu.pb4:polymer-core:${pv}"
+    implementation "eu.pb4:polymer-resource-pack:${pv}"
+    implementation "eu.pb4:polymer-virtual-entity:${pv}"
+    implementation files(mc == '26.2' ? 'libs/26.2/chalk-3.2.0+26.2.jar' : 'libs/chalk-3.2.1+26.3.jar')
+}
+processResources {
+    inputs.properties(version: project.version, mc: mc, polymer: pv,
+        chalk: mc == '26.2' ? '3.2.0+26.2' : '3.2.1+26.3')
+    filesMatching('fabric.mod.json') { expand(inputs.properties) }
+}
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'; options.release = 25
+    if (providers.gradleProperty('javac').isPresent()) {
+        options.fork = true
+        options.forkOptions.executable = providers.gradleProperty('javac').get()
+    }
+}
+java { withSourcesJar(); sourceCompatibility = JavaVersion.VERSION_25; targetCompatibility = JavaVersion.VERSION_25 }
+jar { from('LICENSE') }

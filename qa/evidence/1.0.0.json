@@ -1,0 +1,235 @@
+{
+  "release": "1.0.0",
+  "tested_date": "2026-09-30",
+  "clean_build_byte_identical": true,
+  "versions": {
+    "26.2": {
+      "artifact": "chalk-polymer-compat-1.0.0+26.2.jar",
+      "sha256": "7d38f8fdfd197e2f97419d75b33f13db25f788e0600bd8f326fdc21dc9125372",
+      "checks": {
+        "without_chalk": {
+          "passed": true,
+          "client": "unsupported",
+          "autohost": false,
+          "mark_model_count": 24,
+          "multiplayer": "PASS 18 real client placements: both chalk types, nine orientations, durability, redraw, virtual display brightness, creative pick, breaking and both client crafting recipes; native=false\n",
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "release-unsupported-crafting"
+        },
+        "native_chalk": {
+          "passed": true,
+          "client": "native",
+          "autohost": false,
+          "mark_model_count": 24,
+          "multiplayer": "PASS 18 real client placements, redraw, durability, display brightness, breaking, pick, both crafting recipes and native raw creative inventory packet\n",
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "release-native-complete"
+        },
+        "zero_mod_vanilla": {
+          "passed": true,
+          "client_entrypoint": "net.minecraft.client.main.Main",
+          "client_mods": [],
+          "join": true,
+          "pack_loaded": true,
+          "server_exit": 0,
+          "run": "release-vanilla"
+        },
+        "colorful_addon": {
+          "passed": true,
+          "client": "none",
+          "autohost": false,
+          "mark_model_count": 384,
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "release-colorful"
+        },
+        "persistence": {
+          "passed": true,
+          "write_exit": 0,
+          "restart_exit": 0,
+          "originals_unchanged": true,
+          "run": "persistence-release",
+          "states_verified_each_phase": {
+            "write": 108,
+            "restart": 108
+          }
+        },
+        "spawn_protection": {
+          "passed": true,
+          "cases": [
+            {
+              "mark_x": 16,
+              "orientation": 0,
+              "support_x": 17,
+              "redraw_allowed": false,
+              "case": "nonop_protected_boundary",
+              "damage": 0
+            },
+            {
+              "mark_x": 16,
+              "orientation": 4,
+              "support_x": 17,
+              "redraw_allowed": true,
+              "case": "operator_protected_boundary",
+              "damage": 1
+            },
+            {
+              "mark_x": 20,
+              "orientation": 4,
+              "support_x": 21,
+              "redraw_allowed": true,
+              "case": "nonop_unprotected",
+              "damage": 1
+            }
+          ],
+          "scope": "Actual server packet handler; synthetic player and outgoing transport",
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "protection-final"
+        },
+        "resource_pack": {
+          "active_blocks": 32,
+          "active_colors": 16,
+          "all_pack_json_valid": true,
+          "chalk_version": "3.2.0+26.2",
+          "generated_item_definitions": 384,
+          "licenses_present": true,
+          "mapped_states": 1728,
+          "pack_json_documents": 518,
+          "packaged_mixins": 6,
+          "passed": true,
+          "resolved_models": 56,
+          "scope": "Static pack, source-rotation, and release-JAR validation",
+          "shim_classes": 14,
+          "shim_version": "1.0.0+26.2",
+          "source_geometry_rotation_checks": 1728,
+          "standalone_shim": true,
+          "state_mapping_sha256": "75a8818cde890fbe5beb8684958689eac1f71cf667da1907fe236284885bad5e",
+          "verified_textures": 35
+        }
+      }
+    },
+    "26.3": {
+      "artifact": "chalk-polymer-compat-1.0.0+26.3.jar",
+      "sha256": "48e437bf54419a1016469abd422df1c278318e157668efc7f6304f421f53eade",
+      "checks": {
+        "without_chalk": {
+          "passed": true,
+          "client": "unsupported",
+          "autohost": true,
+          "mark_model_count": 24,
+          "multiplayer": "PASS 18 real client placements: both chalk types, nine orientations, durability, redraw, virtual display brightness, creative pick, breaking and both client crafting recipes; native=false\n",
+          "hosted_pack_sha1": "a690658bf2b539a6b26fab7b07327a2135b70dac",
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "release-unsupported-crafting"
+        },
+        "native_chalk": {
+          "passed": true,
+          "client": "native",
+          "autohost": true,
+          "mark_model_count": 24,
+          "multiplayer": "PASS 18 real client placements: both chalk types, nine orientations, durability, redraw, virtual display brightness, creative pick, breaking and both client crafting recipes; native=true\n",
+          "hosted_pack_sha1": "a690658bf2b539a6b26fab7b07327a2135b70dac",
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "release-native-crafting"
+        },
+        "zero_mod_vanilla": {
+          "passed": true,
+          "client_entrypoint": "net.minecraft.client.main.Main",
+          "client_mods": [],
+          "join": true,
+          "pack_loaded": true,
+          "server_exit": 0,
+          "run": "release-vanilla"
+        },
+        "colorful_addon": {
+          "passed": true,
+          "client": "none",
+          "autohost": false,
+          "mark_model_count": 384,
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "release-colorful"
+        },
+        "persistence": {
+          "passed": true,
+          "write_exit": 0,
+          "restart_exit": 0,
+          "originals_unchanged": true,
+          "run": "persistence-release",
+          "states_verified_each_phase": {
+            "write": 108,
+            "restart": 108
+          }
+        },
+        "spawn_protection": {
+          "passed": true,
+          "cases": [
+            {
+              "damage": 0,
+              "mark_x": 16,
+              "orientation": 0,
+              "support_x": 17,
+              "redraw_allowed": false,
+              "case": "nonop_protected_boundary"
+            },
+            {
+              "damage": 1,
+              "mark_x": 16,
+              "orientation": 4,
+              "support_x": 17,
+              "redraw_allowed": true,
+              "case": "operator_protected_boundary"
+            },
+            {
+              "damage": 1,
+              "mark_x": 20,
+              "orientation": 4,
+              "support_x": 21,
+              "redraw_allowed": true,
+              "case": "nonop_unprotected"
+            }
+          ],
+          "scope": "Actual server packet handler; synthetic player and outgoing transport",
+          "server_exit": 0,
+          "originals_unchanged": true,
+          "run": "protection-final"
+        },
+        "native_raw_creative": {
+          "passed": true,
+          "multiplayer": "PASS native raw creative inventory packet\n",
+          "server_exit": 0,
+          "tested_shim_sha256": "48e437bf54419a1016469abd422df1c278318e157668efc7f6304f421f53eade"
+        },
+        "resource_pack": {
+          "active_blocks": 32,
+          "active_colors": 16,
+          "all_pack_json_valid": true,
+          "chalk_version": "3.2.1+26.3",
+          "generated_item_definitions": 384,
+          "licenses_present": true,
+          "mapped_states": 1728,
+          "pack_json_documents": 518,
+          "packaged_mixins": 6,
+          "passed": true,
+          "resolved_models": 56,
+          "scope": "Static pack, source-rotation, and release-JAR validation",
+          "shim_classes": 14,
+          "shim_version": "1.0.0+26.3",
+          "source_geometry_rotation_checks": 1728,
+          "standalone_shim": true,
+          "state_mapping_sha256": "75a8818cde890fbe5beb8684958689eac1f71cf667da1907fe236284885bad5e",
+          "verified_textures": 35
+        }
+      }
+    }
+  },
+  "protection_negative_control": {
+    "old_build_expected_failure": true,
+    "scope": "Earlier implementation redraws protected mark; final implementations deny it."
+  }
+}
