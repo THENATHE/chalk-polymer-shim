@@ -1,3 +1,7 @@
+> **Archived on 2026-10-04.** Future combined Minecraft 26.3 development continues in [Vanilla++ Quality of Life Suite](https://github.com/THENATHE/vanilla-plusplus-quality-of-life-suite). Existing standalone releases and source remain available here.
+>
+> This standalone project also retains Minecraft 26.2 support. The suite targets Minecraft 26.3 and is not a replacement for the older-version installation.
+
 # Chalk Polymer Shim
 
 **Use Chalk on a Fabric server with vanilla or modded clients.**
